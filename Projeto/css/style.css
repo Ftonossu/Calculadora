@@ -1,0 +1,61 @@
+body {
+    height: 100vh;
+
+}
+.calculadora {
+    width: 400px;
+    margin: 20px auto;
+    border: 2px solid blue;
+    padding: 20px;
+}
+.visor {
+    width: 392px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: end;
+    letter-spacing: 8px;
+}
+.operadores {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numeros {
+    width: 296.66px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.numero, .ponto, .reset, .operador{
+    width: 90px;
+    height: 70px;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.secao {
+    display: flex;
+    justify-content: space-between;
+}
+.igual {
+    width: 90px;
+    height: 340px;
+    font-size: 30px;
+    margin: 10px 0;
+    background-color: blue;
+    opacity: 0.8;
+    color: #fdfdfd;
+    border: none;
+}
+
+.igual:active {
+    opacity: 0.5;
+}
+.igual:hover {
+    opacity: 1;
+    transition: 0.5s;
+    font-size: 31px;
+}
+.operador:hover{
+    font-weight: bold;
+}
