@@ -97,8 +97,14 @@ reset.addEventListener('click', function(){
 const ponto = document.querySelector('.ponto')
 
 ponto.addEventListener('click', function(){
-    valorVisor1 = valorVisor1 + ".";
-    visor.setAttribute('value', valorVisor1);
+    if(operacao == ''){
+        valorVisor1 = valorVisor1 + ".";
+        visor.setAttribute('value', valorVisor1);
+    } else {
+        valorVisor2 = valorVisor2 + ".";
+        visor.setAttribute('value', valorVisor2);
+    }
+    
 })
 
 // let documento = document.querySelector('body')
