@@ -57,7 +57,10 @@ function adicionaValor2(numero){
 let igual = document.querySelector('.igual');
 
 igual.addEventListener('click', function(){
-    if (operacao == 'soma'){
+    if(operacao == ''){
+        visor.setAttribute('value', valorVisor1);
+    }
+    else if (operacao == 'soma'){
         resultado = parseFloat(valorVisor1) + parseFloat(valorVisor2);
         visor.setAttribute('value', resultado);
         resetCalc();
@@ -97,3 +100,10 @@ ponto.addEventListener('click', function(){
     valorVisor1 = valorVisor1 + ".";
     visor.setAttribute('value', valorVisor1);
 })
+
+// let documento = document.querySelector('body')
+// documento.addEventListener('keypress', function (event) {
+//     const key = event.key;
+//     const code = event.keyCode;
+//     console.log(`Key: ${key}, Code ${code}`);
+//   });
