@@ -58,4 +58,21 @@ body {
 }
 .operador:hover{
     font-weight: bold;
+    background-color: #d3d3d3;
+    transition: 0.3s;
+}
+.numero:hover{
+    font-weight: bold;
+    background-color: #d3d3d3;
+    transition: 0.3s;
+}
+.reset:hover{
+    font-weight: bold;
+    background-color: #d3d3d3;
+    transition: 0.3s;
+}
+.ponto:hover{
+    font-weight: bold;
+    background-color: #d3d3d3;
+    transition: 0.3s;
 }
